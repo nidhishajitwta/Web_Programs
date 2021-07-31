@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<title>Challenge 2</title>
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+<style>
+table,tr, td {
+	border: groove orange;
+	border-radius: 5px;
+	width: 30%;
+	margin: auto;
+	text-align: center;
+	border-collapse: collapse;
+	background-color:yellow ;
+	font-family:  Copperplate, Papyrus, fantasy;
+	font-weight: bold;
+
+}
+table {
+	margin: auto; 
+	margin-top: 60px;
+}
+th{
+	background-color: orange;
+	font-family: "Audiowide", sans-serif;
+	color: white;
+}
+
+        #blink {
+        	margin: center;
+        	text-align: center;
+            font-size: 25px;
+            font-weight: inherit;
+            color: white;
+            transition: 0.5s;
+  			font-family: "Sofia", sans-serif;
+        }
+    </style>
+
+    <script>
+document.write( "<table><tr><th colspan='3'> NUMBERS FROM 0 TO 10 WITH THEIR SQUARES AND CUBES </th></tr>" );
+document.write( "<tr><td>Number</td><td>Square</td><td>Cube</td></tr>" );
+for(var i=1;i<=10;i++)
+{
+document.write( "<tr><td>" + i + "</td><td>" + i*i + "</td><td>" + i*i*i + "</td></tr>" ) ;
+}
+document.write( "</table>" ) ;
+</script>
+<body style="background-color: #FACB8B ;">
+	<p id="blink" class="font-effect-fire"> Challenge Completed! </p>
+<script >
+var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 500);
+    </script>
+     
+</body>
+</head>
+</html>   

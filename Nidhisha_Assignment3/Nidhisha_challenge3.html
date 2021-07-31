@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uluwatu Temple,Bali</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	h2{
+		font-size: 30px;
+		color: black;
+		font-family: "Papyrus", papyrus ,fantasy;
+	}
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 71%;
+		transform: translate(-50%, -50%);
+		font-family: "Lucida Handwriting", cloudflare ,cursive;
+	}
+	.checked {
+		color: orange;
+	}
+	p{
+		text-align: left;
+	}
+	.image{
+		margin-left: 30px;
+	}
+	body{
+		background-color: #CCF9EA;
+	}
+</style>
+<header>
+	<a href="#">HOME</a>|
+	<a href="#">PLACES</a>|
+	<a href="#">GALLERY</a>|
+	<a href="#">ABOUT US</a>|
+	<a href="#">SEARCH</a>
+</header>
+
+</head>
+<body>
+	<br>
+	<h2><strong>Uluwatu Temple, Bali</strong></h2>
+	<h1 id="demo"></h1>
+	<figure>
+		<img src="uluwatutemple.jpg" alt="uluwatu Temple" width="600px" class="image">
+		<article class="image"><i>By <a href="#">Nidhisha Rao</a></i></article>
+	</figure>
+	
+	<script>
+		var var1 = setInterval(inTimer, 500);
+		var fs = 5; //font size
+		var ids = document.getElementById("demo");
+		function inTimer()
+		{
+				ids.innerHTML = '&#10024;insouciant&#10024;';
+				ids.setAttribute('style', "font-size: " + fs + "px; color: deeppink");
+				fs += 5;
+				if (fs >= 50)
+				{
+					clearInterval(var1); //paused
+					var2 = setInterval(deTimer, 500);
+
+				}
+		}
+		function deTimer() //fs = 50px
+		{
+			fs -= 5;
+			ids.innerHTML = 'where you find<br>&nbsp;inner peace';
+			ids.setAttribute('style', "font-size: " + fs + "px; color: green");
+			if (fs == 5)
+			{
+				clearInterval(var2); //paused
+				var1 = setInterval(inTimer, 500);
+			}
+		}
+	</script>
+	<div>
+		<section>
+			Uluwatu Temple, or Pura Luhur Uluwatu, is renowned for its magnificent location, perched on top of a steep cliff approximately 70 metres above the waves. 
+			<br>
+			Pura Luhur Uluwatu is definitely one of the top places in Bali for witnessing a delightful sunset, with direct views overlooking the beautiful waves of the Indian Ocean and daily <br>Kecak dance performances held at an amphitheatre nearby. Balinese architecture, traditionally-designed gateways, and ancient sculptures all add to Uluwatu Temple's appeal.
+		</section>
+		<section>
+			<br>
+			<b>Date:</b> 29 July 2019<br>
+			<b>Location:</b> Uluwatu<br>
+			<b>State:</b> Bali<br>
+			<b>Country:</b> Indonesia
+		</section>
+	</div>
+	<h3><u>Reviews</u></h3>
+	<div>
+		<p>
+			<strong>
+				Beautiful!
+			</strong><br>Hamsa
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+		</p>
+		<p>Nice place! Great scenery! Has a lot of monkeys, so be careful with your belongings &#128517;</p>
+		<hr style="width:100%;text-align:left;margin-left:0">
+	</div>
+	<div>
+		<p>
+			<strong>
+				Literally eyecandy!
+			</strong><br>Cheryl
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+		</p>
+		<p>The temple was beautiful,but I was awestruck by the beauty of the high cliffs on  beach behind the temple!We can see the beautiful sunset as the sun melts into the open blue sea&#128525;&#128525;.<br>There is also a park to roam around. Must go atleast once in your life!</p>
+		<hr style="width:100%;text-align:left;margin-left:0">
+	</div>
+	<div>
+		<p>
+			<strong>
+				meh
+			</strong><br>Max
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+		</p>
+		<p>Overrated temple. Would recommend Tanah Lot. Also you are not alowed inside the temple unless you are a local. And entrance fee is pretty expensive. Tourist trap.</p>
+		<hr style="width:100%;text-align:left;margin-left:0">
+	</div>
+</body>
+<footer>
+	<a href="#">HOME</a>|
+	<a href="#">PLACES</a>|
+	<a href="#">GALLERY</a>|
+	<a href="#">ABOUT US</a>|
+	<a href="#">SEARCH</a>
+	<p style="font-style: italic;">Copyrights &#169; 2019,Bali Tour</p>
+</footer>
+</html>
